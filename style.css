@@ -112,3 +112,63 @@ body {
 .hidden {
     display: none;
 }
+
+@media(max-width:600px) {
+    body {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    #banner {
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 8px 4px;
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+    #tips {
+        top: 2rem;
+        left: 9rem;
+        font-size: 0.6rem;
+        line-height: 4;
+        color: #d7dfea;
+    }
+
+    .add {
+        position: fixed;
+        top: auto;
+        bottom: 1rem;
+        right: 1rem;
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+        z-index: 2;
+    }
+
+    #container {
+        padding-top: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .word {
+        flex: 1 1 45%;
+        max-width: 45%;
+        min-width: 140px;
+        margin: 5px;
+    }
+
+    .main-word, .main-trans, .word-input, .trans-input {
+        font-size: 1rem;
+        height: auto;
+        padding: 4px;
+        line-height: 1.6;
+        word-break: break-word;
+    }
+
+    .word .tool button {
+        font-size: 1rem;
+    }
+}
