@@ -4,7 +4,7 @@ const container = document.getElementById('container');
 const tips = document.createElement('div');
 tips.id = 'tips';
 tips.innerHTML = `
-    再編集・転換／削除ボタン<br>
+    再編集・切替／削除ボタン<br>
     1.ここに単語を入力します<br>
     2.意味やメモを入力します
 `
@@ -108,4 +108,5 @@ function updateLS() {
     });
 
     localStorage.setItem('words', JSON.stringify(allWords));
+
 }
